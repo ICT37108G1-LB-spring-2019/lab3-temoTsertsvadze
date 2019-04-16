@@ -1,0 +1,28 @@
+<div class="management">
+  <form class="managementForm" >
+  
+      <div class="studentname">
+        <label for="name">სახელი</label>
+        <input #name type="text">
+    
+      </div>
+
+
+      <div class="studentlastname">
+        <label  for="lastname">გვარი</label>
+  <input #lastName type="text">
+      
+      </div>
+
+
+
+      <div class="studentID">
+        <label  for="ID">გვარი</label>
+        <input #id type="text">
+
+      </div>
+   
+   <button (click)="onClick(name,lastName,id)" type="submit">შენახვა</button>
+  </form>
+  <app-student-item [student] = "Student"></app-student-item>
+  </div>
